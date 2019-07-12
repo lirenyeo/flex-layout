@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  background: navajowhite;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+nav button {
+  margin-left: auto;
+}
+
+nav a {
+  padding-right: 15px;
+}
+
+nav a:hover {
+  animation: wiggle .6s 1;
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.content {
+  display: flex;
+  min-height: calc(100vh - 60px - 40px);
+}
+
+.content section {
+  background: tomato;
+  max-width: calc(100vw - 300px);
+  padding: 1em;
+}
+
+.content aside {
+  background: turquoise;
+  width: 300px;
+  padding: 1em;
+}
+
+footer {
+  height: 40px;
+  background:sandybrown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  padding: 0 5px;
+}
